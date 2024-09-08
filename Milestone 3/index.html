@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="drawer">
+      <form id="resumeForm">
+        <h2>Personal Info</h2>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="age" placeholder="Age" />
+        <input type="text" id="city" placeholder="City" />
+        <input type="text" id="country" placeholder="Country" />
+        <input type="text" id="occupation" placeholder="Occupation" />
+
+        <h2>Education</h2>
+        <input type="text" id="degree" placeholder="Degree" />
+        <input type="text" id="from" placeholder="From (Year)" />
+        <input type="text" id="institution" placeholder="Institution" />
+        <input type="text" id="to" placeholder="To (Year)" />
+
+        <h2>Skills</h2>
+        <input type="text" id="skill1" placeholder="Skill 1" />
+        <input type="text" id="skill2" placeholder="Skill 2" />
+        <input type="text" id="skill3" placeholder="Skill 3" />
+        <input type="text" id="skill4" placeholder="Skill 4" />
+        <input type="text" id="skill5" placeholder="Skill 5" />
+
+        <h2>Experience</h2>
+        <textarea
+          id="experience"
+          placeholder="Describe your experience"
+        ></textarea>
+
+        <h2>Contact Details</h2>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="url" id="github" placeholder="GitHub Link" />
+        <input type="url" id="linkedin" placeholder="LinkedIn Profile" />
+
+        <button type="button" id="saveBtn">Save</button>
+      </form>
+    </div>
+
+    <div class="resume-container">
+      <div id="resume-actions">
+        <button id="previewBtn">Preview</button>
+        <button id="downloadBtn">Download</button>
+      </div>
+      <div id="resume-display">
+        <!-- Resume content will be injected here from localStorage -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="display.js"></script>
+  </body>
+</html>
